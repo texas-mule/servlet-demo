@@ -5,9 +5,24 @@
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
   
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/error.html</location>
+  </error-page>
+  
+  <context-param>
+  	<param-name>greeting</param-name>
+  	<param-value>Guten Tag</param-value>
+  </context-param>
+  
   <servlet>
   	<servlet-name>HelloServlet</servlet-name>
   	<servlet-class>com.revature.servlets.HelloServlet</servlet-class>
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>Anonymous</param-value>
+  	</init-param>
+  	<load-on-startup>1</load-on-startup>
   </servlet>
   
   <servlet-mapping>
