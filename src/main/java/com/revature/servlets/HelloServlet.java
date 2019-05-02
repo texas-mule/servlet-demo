@@ -32,4 +32,9 @@ public class HelloServlet extends HttpServlet {
 		out.println("<h1>" + greeting + ", " + name + "</h1>");
 		out.close();
 	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		doGet(req, resp);
+	}
 }
