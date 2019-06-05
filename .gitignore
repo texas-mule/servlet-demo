@@ -111,3 +111,5 @@ buildNumber.properties
 # End of https://www.gitignore.io/api/java,maven,eclipse
 /connection.properties
 .vscode/settings.json
+docker-compose.debug.yml
+.dockerignore

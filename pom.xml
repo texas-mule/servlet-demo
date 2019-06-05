@@ -32,8 +32,8 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
-					<port>8181</port>
-					<path>/servlet</path>
+					<port>8080</port>
+					<path>/servlet-demo</path>
 				</configuration>
 			</plugin>
 		</plugins>
